@@ -13,10 +13,7 @@
 </head>
 
 <body>
-  <div class="container">
-    <h1>Theme Switcher</h1>
-    <button id="switch" onclick="toggleTheme()">Switch</button>
-  </div>
+  
   <script>
 
     function setTheme(themeName) {
@@ -41,11 +38,17 @@
       }
     })();
   </script>
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
+  <header>
+  <h1 class="fs-600 text-primary-300">Social Media Dashboard</h1>
+  <span>Total Followers: 23,004</span>
+  
+  <div class="text-primary-200">Dark Mode 
+    <label id="switch" class="switch">
+      <input type="checkbox" onchange="toggleTheme()" id="slider">
+      <span class="slider round"></span>
+  </label>
+</header>
+<main>
 
 
   @nathanf
@@ -70,7 +73,7 @@
 
 
 
-  Overview - Today
+  <h2 class="fs-500 text-primary-300">Overview - Today</h2>
 
   Page Views
   87
@@ -103,7 +106,7 @@
   Total Views
   1407
   12%
-
+</main>
 </body>
 
 </html>
